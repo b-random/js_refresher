@@ -1,9 +1,10 @@
 var secretNumber = 4;
-var guess = prompt("Guess a number to win!!!");
+var guess = Number(prompt("Guess a number to win!!!"));
 
-if(Number(guess) === secretNumber){
+if(guess === secretNumber){
 	alert("You guessed the secret number, 4! You are a winner!");
+} else if(guess < secretNumber){
+	alert("Too low, guess again.");
 } else {
-	alert("Womp, womp. Sorry, you are a loser.");
-
+	alert("Too high, guess again.");
 };
