@@ -38,15 +38,33 @@
 //	num--;
 //};
 
-var q = prompt("Are we there yet?");
+//var q = prompt("Are we there yet?");
 
 
-while(q !== 'yes' && q !== 'yeah') {
-	if(q.includes("yes") == true || q.includes("yeah") == true) {
-		break;
-	} else {
-	var q = prompt("Are we there yet?");
+//while(q !== 'yes' && q !== 'yeah') {
+//	if(q.includes("yes") == true || q.includes("yeah") == true) {
+//		break;
+//	} else {
+//	var q = prompt("Are we there yet?");
+//    };
+//};
+//
+//console.log("Yay!  We are there!");
+
+//for loops
+
+//for(var i = 10; i <= 40; i+=2){
+//	console.log(i);
+//};
+
+//for(var i = 300; i < 333; i+=1){
+//	if(i % 2 !== 0){
+//	  console.log(i);
+//	};  
+//};
+
+for(var i = 5; i <= 50; i+=1){
+	if(i % 5 === 0 && i % 3 === 0){
+	  console.log(i);
     };
 };
-
-console.log("Yay!  We are there!");
