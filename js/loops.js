@@ -37,3 +37,16 @@
 //	console.log(num + 1);
 //	num--;
 //};
+
+var q = prompt("Are we there yet?");
+
+
+while(q !== 'yes' && q !== 'yeah') {
+	if(q.includes("yes") == true || q.includes("yeah") == true) {
+		break;
+	} else {
+	var q = prompt("Are we there yet?");
+    };
+};
+
+console.log("Yay!  We are there!");
