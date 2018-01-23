@@ -11,7 +11,7 @@ if(age % Math.sqrt(age) === 0){//if(Number.isInteger(squared) && squared * squar
 	console.log("Your age is odd.");
 } else if(age < 21){ 
 	console.log("You may enter, but you cannot drink!");
-} else if(age === 21){
+} else if(age == 21){
 	console.log("Happy 21st Birthday!");
 } else {
 	console.log("Have a good time!");
