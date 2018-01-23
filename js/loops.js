@@ -20,11 +20,20 @@
 //	num += 2;//
 //}
 
-var num = 1;
+//var num = 1;
 
-while(num <= 20) {
-	if(num % 4 === 0) {
-    console.log(num);
-};
-	num++;
-};
+//while(num <= 20) {
+//	if(num % 4 === 0) {
+//    console.log(num);
+//};
+//	num++;
+//};
+
+
+//Infinite loop!!!!
+//var num = 100;
+//
+//while(num < 150) {
+//	console.log(num + 1);
+//	num--;
+//};
