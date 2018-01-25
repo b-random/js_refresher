@@ -23,8 +23,8 @@
 //  	return n;
 //};
 
-function SnakeToKebab(str) {
-	var newStr = str.replace(/_/g, "-");
-	return newStr;
-};
+//function SnakeToKebab(str) {
+//	var newStr = str.replace(/_/g, "-"); //this regex, "/_/g", replaces all instaces of whatever lives between slashes
+//	return newStr;
+//};
 
