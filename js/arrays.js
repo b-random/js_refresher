@@ -18,10 +18,26 @@
 
 
 
-var arr = [
-  [1, 2, 3],
-  ["red", "white", "blue"],
-  ["Bob", "Bill", "Brad"]
-];
+//var arr = [
+//  [1, 2, 3],
+//  ["red", "white", "blue"],
+//  ["Bob", "Bill", "Brad"]
+//];
 
-console.log(arr[1][2]);//blue
+//console.log(arr[1][2]);//blue
+
+var todo = ["school"];
+
+var input = prompt("What would you like to do?");
+
+while(input !== "quit"){
+	if(input == "list"){
+		console.log(todo);
+	} else if(input === "new") {
+		var newItem = prompt("Add a new task to the list:");
+		todo.push(newItem);
+	}
+	input = prompt("What would you like to do?");
+};
+
+console.log("Goodbye.");
