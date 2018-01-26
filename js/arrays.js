@@ -44,7 +44,14 @@
 
 //Array iteration
 
-//
+//var color = ['red', 'blue', 'yellow', 'green'];
+
 //for(var i = 0; i < color.length; i++){
 //	console.log(color[i]);
 //}
+
+var color = ['red', 'blue', 'yellow', 'green', 'orange'];
+
+color.forEach(function(x){
+	console.log(x);
+});
