@@ -58,18 +58,44 @@
 
 //extracting the functionality of the forEach method:
 
-var colorList = ['red', 'blue', 'yellow', 'green', 'orange'];
+//var colorList = ['red', 'blue', 'yellow', 'green', 'orange'];
 
-function printColor(color){
-	console.log(color);
+//function printColor(color){
+//	console.log(color);
+//};
+
+//printColor("red");
+
+//colorList.forEach(printColor);
+
+//the same as a for loop
+
+//for(var i = 0; i < colorList.length; i++){
+//	console.log(colorList[i]);
+//};
+
+var todo = [];
+
+var input = prompt("What would you like to do?");
+
+
+while(input !== "quit"){
+	if(input === "list"){
+		todo.forEach(function(add, i){
+			console.log(i + 1 + ": " + todo[i]);
+		})
+	} else if(input === "new") {
+		var newItem = prompt("Add a new task to the list:");
+		todo.push(newItem);
+	} else if(input === "delete") {
+		var number = prompt("Number of item you would like to remove:");
+		todo.splice(number - 1, 1);
+		todo.forEach(function(i){
+		
+		})
+	}
+	input = prompt("What would you like to do?");
 };
-
-printColor("red");
-
-colorList.forEach(printColor);
-
-
-
 
 
 
