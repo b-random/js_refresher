@@ -26,18 +26,25 @@
 
 //console.log(arr[1][2]);//blue
 
-var todo = ["school"];
+//var todo = ["school"];
 
-var input = prompt("What would you like to do?");
+//var input = prompt("What would you like to do?");
 
-while(input !== "quit"){
-	if(input == "list"){
-		console.log(todo);
-	} else if(input === "new") {
-		var newItem = prompt("Add a new task to the list:");
-		todo.push(newItem);
-	}
-	input = prompt("What would you like to do?");
-};
+//while(input !== "quit"){
+//	if(input == "list"){
+//		console.log(todo);
+//	} else if(input === "new") {
+//		var newItem = prompt("Add a new task to the list:");
+//		todo.push(newItem);
+//	}
+//	input = prompt("What would you like to do?");
+//};
 
-console.log("Goodbye.");
+//console.log("Goodbye.");
+
+//Array iteration
+
+//
+//for(var i = 0; i < color.length; i++){
+//	console.log(color[i]);
+//}
