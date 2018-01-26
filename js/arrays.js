@@ -50,8 +50,27 @@
 //	console.log(color[i]);
 //}
 
-var color = ['red', 'blue', 'yellow', 'green', 'orange'];
+//var color = ['red', 'blue', 'yellow', 'green', 'orange'];
 
-color.forEach(function(x){
-	console.log(x);
-});
+//color.forEach(function(x){
+//	console.log(x);
+//});
+
+//extracting the functionality of the forEach method:
+
+var colorList = ['red', 'blue', 'yellow', 'green', 'orange'];
+
+function printColor(color){
+	console.log(color);
+};
+
+printColor("red");
+
+colorList.forEach(printColor);
+
+
+
+
+
+
+
