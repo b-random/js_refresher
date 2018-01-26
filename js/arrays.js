@@ -74,29 +74,63 @@
 //	console.log(colorList[i]);
 //};
 
+
+//revised todo list with 'delete'
+
+//var todo = [];
+
+//var input = prompt("What would you like to do?");
+
+
+//while(input !== "quit"){
+//	if(input === "list"){
+//		todo.forEach(function(add, i){
+//			console.log(i + 1 + ": " + todo[i]);
+//		})
+//	} else if(input === "new") {
+//		var newItem = prompt("Add a new task to the list:");
+//		todo.push(newItem);
+//	} else if(input === "delete") {
+//		var number = prompt("Number of item you would like to remove:");
+//		todo.splice(number - 1, 1);
+//		todo.forEach(function(i){
+//		
+//		})
+//	}
+//	input = prompt("What would you like to do?");
+//};
+
 var todo = [];
 
 var input = prompt("What would you like to do?");
 
 
+function addNew(){
+	var newItem = prompt("Add a new task to the list:");
+	todo.push(newItem);
+};
+
+function listAll(){
+	todo.forEach(function(add, i){
+		console.log(i + 1 + ": " + todo[i]);
+	});
+};
+
+function removeIndex(){
+  var number = prompt("Number of item you would like to remove:");
+  todo.splice(number - 1, 1);
+  todo.forEach(function(i){
+  });
+};
+
 while(input !== "quit"){
 	if(input === "list"){
-		todo.forEach(function(add, i){
-			console.log(i + 1 + ": " + todo[i]);
-		})
+		listAll();
 	} else if(input === "new") {
-		var newItem = prompt("Add a new task to the list:");
-		todo.push(newItem);
+		addNew();
 	} else if(input === "delete") {
-		var number = prompt("Number of item you would like to remove:");
-		todo.splice(number - 1, 1);
-		todo.forEach(function(i){
-		
-		})
+		removeIndex();
 	}
 	input = prompt("What would you like to do?");
 };
-
-
-
 
