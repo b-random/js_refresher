@@ -134,3 +134,5 @@ while(input !== "quit"){
 	input = prompt("What would you like to do?");
 };
 
+alert("Goodbye.");
+
