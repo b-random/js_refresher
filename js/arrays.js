@@ -100,39 +100,45 @@
 //	input = prompt("What would you like to do?");
 //};
 
-var todo = [];
+//
+//var input = prompt("What would you like to do?");
 
-var input = prompt("What would you like to do?");
 
+//function addNew(){
+//	var newItem = prompt("Add a new task to the list:");
+//	todo.push(newItem);
+//};
 
-function addNew(){
-	var newItem = prompt("Add a new task to the list:");
-	todo.push(newItem);
+//function listAll(){
+//	todo.forEach(function(add, i){
+//		console.log(i + 1 + ": " + todo[i]);
+//	});
+//};
+
+//function removeIndex(){
+ // var number = prompt("Number of item you would like to remove:");
+ // todo.splice(number - 1, 1);
+ // todo.forEach(function(i){
+ // });
+//};
+
+//while(input !== "quit"){
+	//if(input === "list"){
+	//	listAll();//
+	//} else if(input === "new") {
+	//	addNew();
+	//} else if(input === "delete") {
+	//	removeIndex();
+	//}
+	//input = prompt("What would you like to do?");
+//};
+
+//alert("Goodbye.");
+
+var arr = [2, 4, 6, 8, 10];
+
+function printReverse(){
+  for(var i = arr.length; i > 0; i--){
+	console.log(arr[i - 1]);
+  };
 };
-
-function listAll(){
-	todo.forEach(function(add, i){
-		console.log(i + 1 + ": " + todo[i]);
-	});
-};
-
-function removeIndex(){
-  var number = prompt("Number of item you would like to remove:");
-  todo.splice(number - 1, 1);
-  todo.forEach(function(i){
-  });
-};
-
-while(input !== "quit"){
-	if(input === "list"){
-		listAll();
-	} else if(input === "new") {
-		addNew();
-	} else if(input === "delete") {
-		removeIndex();
-	}
-	input = prompt("What would you like to do?");
-};
-
-alert("Goodbye.");
-
