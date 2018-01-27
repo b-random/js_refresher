@@ -187,15 +187,33 @@
 //    return holder;
 //};
 
-function myForEach(arr, func){
-	for(var i = 0; i < arr.length; i++){
-		func(arr[i]);
+//breaking down the forEach logic
+
+//function myForEach(arr, func){
+//	for(var i = 0; i < arr.length; i++){
+//		func(arr[i]);
+//	};
+//};
+//
+//myForEach([1, 2, 3], function(x){
+//   console.log(x + 1);
+//})
+
+//create myforEach as an object
+
+Array.prototype.myforEach = function(func){
+	for(var i = 0; i < this.length; i++){
+		func(this[i]);
 	};
 };
 
-myForEach([1, 2, 3], function(x){
-   console.log(x + 1);
-})
+// call the object
+
+var nums = [2, 5, 9];
+
+nums.myforEach(function(x){
+	console.log(x);
+});
 
 
 
