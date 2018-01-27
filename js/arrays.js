@@ -175,17 +175,28 @@
 
 
 //return highest numerical value, assume all values are numbers
-var testArr = [100, 300, 200];
+//var testArr = [100, 300, 200];
 
-function max(x){
-	var holder = x[0];
-    for(var i = 1; i < x.length; i++){
-      if(x[i] > holder){
-      	holder = x[i];
-      }
-    }; 
-    return holder;
-}
+//function max(x){
+//	var holder = x[0];
+//    for(var i = 1; i < x.length; i++){
+//      if(x[i] > holder){
+//      	holder = x[i];
+//      }   
+//    }; 
+//    return holder;
+//};
+
+function myForEach(arr, func){
+	for(var i = 0; i < arr.length; i++){
+		func(arr[i]);
+	};
+};
+
+myForEach([1, 2, 3], function(x){
+   console.log(x + 1);
+})
+
 
 
 
