@@ -149,18 +149,26 @@ var testArr = [100, 100, 100];
 
 //check array for uniformness, true or false
 
-function isUniform(arr){
-    var x = arr[0];
-	for(var i = 1; i < arr.length; i++){
-		if(arr[i] !== x){
-			return false;
-		};
-	};	
-	return true;	
+//function isUniform(arr){
+//    var first = arr[0];
+//	for(var i = 1; i < arr.length; i++){
+//		if(arr[i] !== first){
+//			return false;
+//		};
+//	};	
+//	return true;	
+//};
+
+
+// sum of array
+
+function sumArray(arr){
+	var count = 0;
+	
+      arr.forEach(function(current){
+		count = count + current;
+	  });
+	  
+	return count
 };
 
-isUniform(testArr);
-
-//testArr.forEach(function(arr, i){
-
-//})
