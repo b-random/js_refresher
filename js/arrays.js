@@ -139,7 +139,7 @@
 
 //log an array backwards without changing the original array
 
-var testArr = [100, 100, 100];
+//var testArr = [100, 100, 100];
 
 //function printReverse(){
 //  for(var i = arr.length; i > 0; i--){
@@ -162,13 +162,32 @@ var testArr = [100, 100, 100];
 
 // sum of array
 
-function sumArray(arr){
-	var count = 0;
+//function sumArray(arr){
+//	var count = 0;
 	
-      arr.forEach(function(current){
-		count = count + current;
-	  });
+//      arr.forEach(function(current){
+//		count = count + current;
+//	  });
 	  
-	return count
-};
+//	return count
+//};
+
+
+
+//return highest numerical value, assume all values are numbers
+var testArr = [100, 300, 200];
+
+function max(x){
+	var holder = x[0];
+    for(var i = 1; i < x.length; i++){
+      if(x[i] > holder){
+      	holder = x[i];
+      }
+    }; 
+    return holder;
+}
+
+
+
+
 
