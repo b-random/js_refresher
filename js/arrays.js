@@ -135,10 +135,32 @@
 
 //alert("Goodbye.");
 
-var arr = [2, 4, 6, 8, 10];
+//Arrays Exercises
 
-function printReverse(){
-  for(var i = arr.length; i > 0; i--){
-	console.log(arr[i - 1]);
-  };
+//log an array backwards without changing the original array
+
+var testArr = [100, 100, 100];
+
+//function printReverse(){
+//  for(var i = arr.length; i > 0; i--){
+//	console.log(arr[i - 1]);
+//  };
+//};
+
+//check array for uniformness, true or false
+
+function isUniform(arr){
+    var x = arr[0];
+	for(var i = 1; i < arr.length; i++){
+		if(arr[i] !== x){
+			return false;
+		};
+	};	
+	return true;	
 };
+
+isUniform(testArr);
+
+//testArr.forEach(function(arr, i){
+
+//})
