@@ -31,21 +31,54 @@ var person1 = {
 
 //Objects in arrays
 
-var posts = [
-    {
-      title: "First Post",
-      author: "BB",
-      comments: {"Good post", "5 stars"}             
-    }, 
-    { 
-      title: "Post number 2",
-      author: "Dr. Dude"
-    }
-];
+//var posts = [
+//    {
+//      title: "First Post",
+//      author: "BB",
+//      comments: {"Good post", "5 stars"}             
+//    }, 
+//    { 
+//      title: "Post number 2",
+//      author: "Dr. Dude"
+//    }
+//];
 
-posts[0].author
+//posts[0].author
 ////"BB"
-posts[1].author
+//posts[1].author
 ////"Dr. Dude"
-posts[0].comments[1]
-////"5 stars"
+//posts[0].comments[1]
+//////"5 stars"
+
+
+var someObject = {
+	friends: [
+      {name: "malfoy"},
+      {name: "crabbie"},
+      {name: "Goyle"}
+	],
+	color: "baby blue",
+	isevil: true
+};
+
+//retrieve 'malfoy' from someObject
+
+someObject.friends[0].name;
+////malfoy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
