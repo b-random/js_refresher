@@ -51,21 +51,41 @@ var person1 = {
 //////"5 stars"
 
 
-var someObject = {
-	friends: [
-      {name: "malfoy"},
-      {name: "crabbie"},
-      {name: "Goyle"}
-	],
-	color: "baby blue",
-	isevil: true
-};
+//var someObject = {
+//	friends: [
+//      {name: "malfoy"},
+//      {name: "crabbie"},
+//      {name: "Goyle"}
+//	],
+//	color: "baby blue",
+//	isevil: true
+//};
 
 //retrieve 'malfoy' from someObject
 
-someObject.friends[0].name;
+//someObject.friends[0].name;
 ////malfoy
 
+var movieDB = [
+  {
+  	title: "Oldboy",
+  	rating: 5,
+  	hasWatched: true
+  },
+  {
+  	title: "You were never really there",
+    rating: "Unknown",
+    hasWatched: false
+  },
+  {
+  	title: "Whiplash",
+  	rating: 5,
+  	hasWatched: true
+  }
+];
+
+console.log("you have watched " + movieDB[0].title + " - " + movieDB[0].rating + " stars!");
+console.log("you have not watched " + movieDB[1].title + " - " + movieDB[1].rating + " stars!");
 
 
 
