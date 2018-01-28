@@ -22,9 +22,30 @@ var person1 = {
 
 //console.log(person1);
 
-var person2 = new Object();
+//var person2 = new Object();
 
-person2.job = "Tech";
-person2.weight = 190;
+//person2.job = "Tech";
+//person2.weight = 190;
 
-console.log(person2);
+//console.log(person2);
+
+//Objects in arrays
+
+var posts = [
+    {
+      title: "First Post",
+      author: "BB",
+      comments: {"Good post", "5 stars"}             
+    }, 
+    { 
+      title: "Post number 2",
+      author: "Dr. Dude"
+    }
+];
+
+posts[0].author
+////"BB"
+posts[1].author
+////"Dr. Dude"
+posts[0].comments[1]
+////"5 stars"
