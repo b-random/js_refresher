@@ -84,10 +84,18 @@ var movieDB = [
   }
 ];
 
-console.log("you have watched " + movieDB[0].title + " - " + movieDB[0].rating + " stars!");
-console.log("you have not watched " + movieDB[1].title + " - " + movieDB[1].rating + " stars!");
+//console.log("you have watched " + movieDB[0].title + " - " + movieDB[0].rating + " stars!");
+//console.log("you have not watched " + movieDB[1].title + " - " + movieDB[1].rating + " stars!");
 
-
+movieDB.forEach(function(movie){
+	var results = "You have ";
+	if(movie.hasWatched){
+		results += "watch "
+	} else {
+		results += "not seen "
+	}
+	console.log(results + "'" + movie.title + "', with a rating of " + movie.rating + " stars.");
+});
 
 
 
