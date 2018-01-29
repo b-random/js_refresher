@@ -66,40 +66,41 @@ var person1 = {
 //someObject.friends[0].name;
 ////malfoy
 
-var movieDB = [
-  {
-  	title: "Oldboy",
-  	rating: 5,
-  	hasWatched: true
-  },
-  {
-  	title: "You were never really there",
-    rating: "Unknown",
-    hasWatched: false
-  },
-  {
-  	title: "Whiplash",
-  	rating: 5,
-  	hasWatched: true
-  }
-];
+//var movieDB = [
+//  {
+//  	title: "Oldboy",
+//  	rating: 5,
+//  	hasWatched: true
+//  },
+//  {
+//  	title: "You were never really there",
+//    rating: "Unknown",
+//    hasWatched: false
+//  },
+//  {
+//  	title: "Whiplash",
+//  	rating: 5,
+//  	hasWatched: true
+//  }
+//];
 
 //console.log("you have watched " + movieDB[0].title + " - " + movieDB[0].rating + " stars!");
 //console.log("you have not watched " + movieDB[1].title + " - " + movieDB[1].rating + " stars!");
 
-function output(movie){
-	var results = "You have ";
-	if(movie.hasWatched){
-		results += "watch "
-	} else {
-		results += "not seen "
-	}
-	console.log(results + "'" + movie.title + "', with a rating of " + movie.rating + " stars.");
-};
+//function output(movie){
+//	var results = "You have ";
+//	if(movie.hasWatched){
+//		results += "watch "
+//	} else {
+//		results += "not seen "
+//	}
+//	console.log(results + "'" + movie.title + "', with a rating of " + movie.rating + " stars.");
+//};
 
-movieDB.forEach(function(movie){
-	output(movie);
-});
+//movieDB.forEach(function(movie){
+//	output(movie);
+//});
+
 
 
 
