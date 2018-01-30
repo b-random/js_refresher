@@ -48,5 +48,23 @@
 //var firstId = document.querySelector("#highlight");
 //firstId.style.fontWeight = 800;
 
+//
 //var all = document.querySelectorAll("h1");
+//
 //all[1].style.color = "orange";
+
+
+
+//Find 4 different ways to query the first <p> tag
+
+var p = document.querySelector('#firstp');
+p.style.fontStyle = "italic";
+
+var p2 = document.querySelectorAll('p');
+p2[0].style.fontWeight = 800;
+
+var p3 = document.getElementsByTagName('p');
+p3[0].style.color = '#ff0381';
+
+var p4 = document.getElementsByClassName('firstp');
+p4[0].style.textDecoration = "underline"
