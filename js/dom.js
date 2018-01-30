@@ -48,5 +48,5 @@
 //var firstId = document.querySelector("#highlight");
 //firstId.style.fontWeight = 800;
 
-var all = document.querySelectorAll("h1");
-all[1].style.color = "orange";
+//var all = document.querySelectorAll("h1");
+//all[1].style.color = "orange";
