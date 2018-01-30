@@ -77,8 +77,8 @@ img1[0].classList.add("some-class");
 var h1 = document.getElementsByTagName("h1");
 h1[1].classList.add("another-class");
 
-
-
+var anotherh1 = document.getElementsByTagName("li");
+anotherh1[2].classList.toggle("bolded"); //toggle enales/disables with each iteration.  very useful for onClick
 
 
 
