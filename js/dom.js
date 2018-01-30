@@ -17,28 +17,36 @@
 //Dom selector methods...
 
 //.getElementById
-var tag = document.getElementById("highlight");
-tag.style.color = "orange";
+//var tag = document.getElementById("highlight");
+//tag.style.color = "orange";
 
 //.getElementsByClassName
-var tags = document.getElementsByClassName("bolded");
-tags[0].style.color = "red"; //ByClassName returns an array and the elements must be referred to by position
+//var tags = document.getElementsByClassName("bolded");
+//tags[0].style.color = "red"; //ByClassName returns an array and the elements must be referred to by position
 
 //.getElementsByTagName
-var elTag = document.getElementsByTagName("li");
-elTag[1].style.fontWeight = 800;
+//var elTag = document.getElementsByTagName("li");
+//elTag[1].style.fontWeight = 800;
 
 //iterate through all elements returned by TagName^
-function thruElTag(arr){
-	for(var i = 0; i < arr.length; i++ ){
-		arr[i].style.color = "pink";
-	};
-};
+//function thruElTag(arr){
+//	for(var i = 0; i < arr.length; i++ ){
+//		arr[i].style.color = "pink";
+//	};
+//};
 
-thruElTag(elTag);
+//thruElTag(elTag);
 
 //.querySelector
 //returns first of kind
 
-var first = document.querySelector("h1");
-first.style.color = "red";
+//var first = document.querySelector("h1");
+//first.style.color = "red";
+
+//to target id's or classes with querySelector
+
+//var firstId = document.querySelector("#highlight");
+//firstId.style.fontWeight = 800;
+
+var all = document.querySelectorAll("h1");
+all[1].style.color = "orange";
