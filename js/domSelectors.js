@@ -102,3 +102,6 @@ var link = document.querySelector('a');
 link.setAttribute("href", "https://www.reddit.com");
 //changes the destination, but not the hyperlink
 
+var img = document.querySelector('img');
+img.setAttribute("src", "https://img.buzzfeed.com/buzzfeed-static/static/2016-07/20/11/campaign_images/buzzfeed-prod-fastlane02/16-corgi-mixes-that-will-melt-your-cold-unloving--2-2759-1469026977-1_dblbig.jpg");
+//changes image
