@@ -84,14 +84,21 @@
 
 //textContent vs innerHTML
 
-var p = document.getElementsByTagName("p")[1];
-p.textContent = "test test test"; //replaces with text
+//var p = document.getElementsByTagName("p")[1];
+//p.textContent = "test test test"; //replaces with text//
 
-var ul = document.querySelector("ul");
-ul.innerHTML // shows all html tags
+//var ul = document.querySelector("ul");
+//ul.innerHTML // shows all html tags
 
 //"
 //<li id="highlight">Item 1</li>
 //<li class="bolded">Item 2</li>
 //<li class="bolded">Item 3</li>	
 //"
+
+//querying attributes
+
+var link = document.querySelector('a');
+link.setAttribute("href", "https://www.reddit.com");
+//changes the destination, but not the hyperlink
+
