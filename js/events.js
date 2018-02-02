@@ -17,12 +17,26 @@
 
  //do the same thing, but without using an annonymous function
 
-var li = document.querySelectorAll("li");
+//var li = document.querySelectorAll("li");//
 
-var change = function(){
-	this.style.color = "yellow"
-};
+//var change = function(){
+//	this.style.color = "yellow"
+//};//
 
-for(var i = 0; i < li.length; i++){
-	li[i].addEventListener("click", change);
-};
+//for(var i = 0; i < li.length; i++){
+//	li[i].addEventListener("click", change);
+//};
+
+//Events exercise:  when button is clicked, change background color from one color to another
+
+var button = document.querySelector('button');
+var body = document.querySelector('body');
+
+
+button.addEventListener("click", function(){
+  if(body.style.background === "pink"){
+    body.style.background = "white";
+  } else {
+  	body.style.background = "pink";
+  };  
+});
