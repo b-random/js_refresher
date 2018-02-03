@@ -30,13 +30,24 @@
 //Events exercise:  when button is clicked, change background color from one color to another
 
 var button = document.querySelector('button');
-var body = document.querySelector('body');
+//var body = document.querySelector('body');//
+//
 
+//button.addEventListener("click", function(){
+//  if(body.style.background === "pink"){
+//    body.style.background = "white";
+//  } else {
+//  	body.style.background = "pink";
+//  };  
+//});
+
+
+//Use the toggle method to enable and disable a css property
+
+// .toggleMe {
+//   background: "orange";
+// }
 
 button.addEventListener("click", function(){
-  if(body.style.background === "pink"){
-    body.style.background = "white";
-  } else {
-  	body.style.background = "pink";
-  };  
+	document.body.classList.toggle("toggleMe");
 });
