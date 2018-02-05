@@ -63,6 +63,15 @@ p2Button.addEventListener("click", function(){
 });
 
 reset.addEventListener("click", function(){
+	resetAll(); 
+});
+
+newInput.addEventListener("change", function(){
+	playTo.textContent = newInput.value;
+	winningNumber = Number(newInput.value);
+});
+
+function resetAll(){
 	p1Counter = 0;
 	p2Counter = 0;
 	p1Score.textContent = p1Counter;
@@ -74,10 +83,5 @@ reset.addEventListener("click", function(){
 	newInput.value = "";
 	winningNumber = 5;
 	playTo.textContent = winningNumber;
-});
-
-newInput.addEventListener("change", function(){
-	playTo.textContent = newInput.value;
-	winningNumber = Number(newInput.value);
-});
+};
 
