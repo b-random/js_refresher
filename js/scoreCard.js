@@ -7,29 +7,66 @@ var p2Score = document.getElementById('p2Score');
 var p1Counter = 0;
 var p2Counter = 0;
 var winner = document.getElementById("winner");
+var gameOver = false;
 
 //p1Button is click, p1Counter + 1, p1Score.textContent = p1Counter
 
+//p1Button.addEventListener("click", function(){
+//	p1Counter++;
+//	p1Score.textContent = p1Counter;
+//	if(p1Counter === 5){
+//		winner.textContent = "PLAYER ONE WINS!!!"
+//	}
+//});//
+
+//p2Button.addEventListener("click", function(){
+//	p2Counter++;
+//	p2Score.textContent = p2Counter;
+//	if(p2Counter === 5){
+//		winner.textContent = "PLAYER TWO WINS!!!"
+//	} 
+//});//
+
+//reset.addEventListener("click", function(){
+//    p1Counter = 0;
+//	p1Score.textContent = "0";
+//	p2Counter = 0;
+//	p2Score.textContent = "0";
+//    winner.textContent = " ";
+//});
+
 p1Button.addEventListener("click", function(){
-	p1Counter++;
-	p1Score.textContent = p1Counter;
-	if(p1Counter === 5){
-		winner.textContent = "PLAYER ONE WINS!!!"
-	}
+  if(!gameOver){ //if gameOver is false
+    p1Counter++;
+    if(p1Counter === 5){
+    	p1Score.classList.add("scoreColor");
+    	gameOver = true;
+    	winner.textContent = "Player 1 wins!"
+    };
+  }; 
+  p1Score.textContent = p1Counter;
 });
 
 p2Button.addEventListener("click", function(){
-	p2Counter++;
-	p2Score.textContent = p2Counter;
-	if(p2Counter === 5){
-		winner.textContent = "PLAYER TWO WINS!!!"
-	} 
+  if(!gameOver){ //if gameOver is false
+    p2Counter++;
+    if(p2Counter === 5){
+    	p2Score.classList.add("scoreColor");
+    	gameOver = true;
+    	winner.textContent = "Player 2 wins!"
+    };
+  }; 
+  p2Score.textContent = p2Counter;
 });
 
 reset.addEventListener("click", function(){
-    p1Counter = 0;
-	p1Score.textContent = "0";
+	p1Counter = 0;
 	p2Counter = 0;
-	p2Score.textContent = "0";
-    winner.textContent = " ";
-});
+	p1Score.textContent = p1Counter;
+	p2Score.textContent = p2Counter;
+	gameOver = false;
+	winner.textContent = "";
+	p1Score.classList.remove("scoreColor");
+	p2Score.classList.remove("scoreColor");
+})
+
