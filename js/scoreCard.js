@@ -67,8 +67,8 @@ reset.addEventListener("click", function(){
 });
 
 newInput.addEventListener("change", function(){
-	playTo.textContent = newInput.value;
-	winningNumber = Number(newInput.value);
+	playTo.textContent = this.value;
+	winningNumber = Number(this.value);
 });
 
 function resetAll(){
