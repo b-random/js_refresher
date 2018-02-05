@@ -8,6 +8,9 @@ var p1Counter = 0;
 var p2Counter = 0;
 var winner = document.getElementById("winner");
 var gameOver = false;
+var newInput = document.querySelector("input");
+var playTo = document.querySelector("h4 span");
+var winningNumber = 5;
 
 //p1Button is click, p1Counter + 1, p1Score.textContent = p1Counter
 
@@ -38,7 +41,7 @@ var gameOver = false;
 p1Button.addEventListener("click", function(){
   if(!gameOver){ //if gameOver is false
     p1Counter++;
-    if(p1Counter === 5){
+    if(p1Counter === winningNumber){
     	p1Score.classList.add("scoreColor");
     	gameOver = true;
     	winner.textContent = "Player 1 wins!"
@@ -50,7 +53,7 @@ p1Button.addEventListener("click", function(){
 p2Button.addEventListener("click", function(){
   if(!gameOver){ //if gameOver is false
     p2Counter++;
-    if(p2Counter === 5){
+    if(p2Counter === winningNumber){
     	p2Score.classList.add("scoreColor");
     	gameOver = true;
     	winner.textContent = "Player 2 wins!"
@@ -68,5 +71,13 @@ reset.addEventListener("click", function(){
 	winner.textContent = "";
 	p1Score.classList.remove("scoreColor");
 	p2Score.classList.remove("scoreColor");
-})
+	newInput.value = "";
+	winningNumber = 5;
+	playTo.textContent = winningNumber;
+});
+
+newInput.addEventListener("change", function(){
+	playTo.textContent = newInput.value;
+	winningNumber = Number(newInput.value);
+});
 
