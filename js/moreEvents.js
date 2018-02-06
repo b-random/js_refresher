@@ -10,11 +10,11 @@ var first = document.querySelectorAll("li");
 
 for(var i = 0; i < first.length; i++){
 	first[i].addEventListener("mouseover", function(){
-	  this.style.color = "red";
+	  this.classList.add("colored");
     });
 
     first[i].addEventListener("mouseout", function(){
-	  this.style.color = "black";
+	  this.classList.remove("colored");
     });
 
     first[i].addEventListener("click", function(){
