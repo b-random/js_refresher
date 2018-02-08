@@ -14,3 +14,13 @@ body {
 	max-width: 600px;
 	margin: 0 auto;
 }
+
+#title {
+	color: orange;
+	text-align: center;
+}
+
+#navbar {
+	color: orange;
+	text-align: center;
+}
