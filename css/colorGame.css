@@ -1,5 +1,6 @@
 body {
 	background-color: #232323;
+	position: relative;
 }
 
 .square {
@@ -16,11 +17,25 @@ body {
 }
 
 #title {
-	color: orange;
+	color: white;
 	text-align: center;
 }
 
 #navbar {
-	color: orange;
+	color: white;
 	text-align: center;
 }
+
+#stripe1 {
+	background-color: grey;
+	height: 5em;
+}
+
+#navbar {
+	background-color: White;
+}
+
+
+#message {
+	color: black;
+} 
