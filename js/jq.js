@@ -1,1 +1,1 @@
-alert("test")
+$("li").css('color', 'red');
