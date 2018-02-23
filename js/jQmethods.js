@@ -1,10 +1,18 @@
+//.text()
 
-var x = $('li').text();
+$('li').text();
 //  "DogCatPig"
 
-var x = $('ul').text();
+$('ul').text();
 //"
 //  Dog
 //  Cat
 //  Pig
 //"
+
+$('li').text("abcdefg");
+//changes li tags to new text
+
+
+// .html()
+$('li:first-of-type').html("<a href='google.com'>Google!</a>");
